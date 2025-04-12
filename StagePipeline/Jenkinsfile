@@ -120,7 +120,7 @@ pipeline {
                         sh '''
                         aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $appRegistry
                         docker build -t $appRegistry/$IMAGE_NAME:$TAG ./Docker-files/app/multistage/
-                        docker push $appRegistry/$IMAGE_NAME:$TAG
+                        docker push $appRegistry/$IMAGE_NAME:latest
                         '''
                     }
                 }
