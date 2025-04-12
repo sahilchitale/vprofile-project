@@ -24,10 +24,11 @@ pipeline {
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
         registryCredentials = 'ecr:us-east-1:awscreds'
-        appRegistry = '529088297396.dkr.ecr.us-east-1.amazonaws.com/vprofileappimg'
+        appRegistry = '529088297396.dkr.ecr.us-east-1.amazonaws.com'
         vprofileRegistry = "https://529088297396.dkr.ecr.us-east-1.amazonaws.com"
         AWS_REGION = 'us-east-1'
         IMAGE_NAME = 'vprofileappimg'
+        TAG = '6'
         CREDENTIALS_ID = 'awscreds' // only needed if no IAM role
     }
 
