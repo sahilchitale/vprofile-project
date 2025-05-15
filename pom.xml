@@ -261,9 +261,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-    </build>
-
-    <build>
         <plugins>
             <!-- Jetty Plugin -->
             <plugin>
